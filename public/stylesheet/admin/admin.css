@@ -1,0 +1,25 @@
+body {
+    background: url('/image/gallery/back2.svg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  }
+  .logo{
+    position:relative;
+    margin-top:2%;
+    margin-left: 2%;
+    width:15%;
+    height:15%;
+  }
+.btn-grad{
+    background :linear-gradient(to right,gray,black,gray);
+}
+
+
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}
