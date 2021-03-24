@@ -67,9 +67,9 @@ app.get('/gallery', (req, res) => {
     res.render('gallery')
 })
 
-app.get('/brochure', (req, res) => {
-    res.render('history')
-})
+// app.get('/brochure', (req, res) => {
+//     res.render('history')
+// })
 
 app.get('/faq', (req, res) => {
     res.render('faq')
