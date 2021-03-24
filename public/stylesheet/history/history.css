@@ -1,0 +1,345 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url(../../image/history/back2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sprite1 {
+    width: 628.78px;
+    height: 616px;
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    transform-origin: top left;
+    -moz-transform-origin: top left;
+    display: flex;
+    align-items: flex-start;
+    background: url(../../image/history/spritesheet.png) -0px -0px;
+}
+
+.hathi-1 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 0s;
+}
+
+.hathi-2 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 2.5s;
+}
+
+.hathi-3 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 5s;
+}
+
+.hathi-4 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 7.5s;
+}
+
+.hathi-5 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 10s;
+}
+
+.hathi-6 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 12.5s;
+}
+
+.hathi-7 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 15s;
+}
+
+.hathi-8 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 17.5s;
+}
+
+.hathi-9 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 20s;
+}
+
+.hathi-10 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 22.5s;
+}
+
+.hathi-11 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 25s;
+}
+
+.hathi-12 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 27.5s;
+}
+
+.hathi-13 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 30s;
+}
+
+.hathi-14 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 32.5s;
+}
+
+.hathi-15 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 35s;
+}
+
+.hathi-16 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 37.5s;
+}
+
+.hathi-17 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 40s;
+}
+
+.hathi-18 {
+    -webkit-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -moz-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -ms-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    -o-animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation: play 1.8s steps(9) infinite, move 45s infinite;
+    animation-delay: 42.5s;
+}
+
+@-webkit-keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -5659px;
+    }
+}
+
+@-moz-keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -5659px;
+    }
+}
+
+@-ms-keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -5659px;
+    }
+}
+
+@-o-keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -5659px;
+    }
+}
+
+@keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -5659px;
+    }
+}
+
+@-webkit-keyframes move {
+    from {
+        left: 5%;
+    }
+    to {
+        left: 95%;
+    }
+}
+
+@-moz-keyframes move {
+    from {
+        left: 5%;
+    }
+    to {
+        left: 95%;
+    }
+}
+
+@-ms-keyframes move {
+    from {
+        left: 5%;
+    }
+    to {
+        left: 95%;
+    }
+}
+
+@-o-keyframes move {
+    from {
+        left: 5%;
+    }
+    to {
+        left: 95%;
+    }
+}
+
+@keyframes move {
+    from {
+        left: 5%;
+    }
+    to {
+        left: 95%;
+    }
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: -110%;
+    margin-left: -4%;
+    top: 80%;
+    left: 2%;
+    transform: scale(0.3, 1);
+    transform-origin: top left;
+    -moz-transform: scale(0.7, 0.9);
+    -moz-transform-origin: top left;
+}
+
+.show_history {
+    display: flex;
+    align-content: center;
+    width: 100vh;
+    height: 95vh;
+    position: absolute;
+    top: 3%;
+    background-size: contain;
+    /*background-image: url('brochure-01.jpg');*/
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+}
+
+.paused {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.sipahi {
+    position: fixed;
+    width: 112px;
+    height: 323px;
+    transform: scale(0.3);
+    transform-origin: top left;
+    -moz-transform: scale(0.3);
+    -moz-transform-origin: top left;
+    bottom: 10%;
+    z-index: 105;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE and Edge */
+
+body {
+    -ms-overflow-style: none;
+    overflow: hidden;
+}
+
+.footer-distributed {
+    position: absolute;
+    top: 50vh;
+    left: 100vw;
+    width: 100%;
+    z-index: 100;
+}
