@@ -18,6 +18,11 @@ body{
     background-size: cover;
 }
 
+@font-face {
+    src: url(./../../font/Events/BRADHITC.TTF);
+    font-family: bradEvent;
+}
+
 /* -------------------------------- post loader starts ---------------------------------------- */
 @keyframes goTopRight {
     0% {
@@ -83,7 +88,7 @@ body{
     height: 100vh;
 }
 .pre-1 {
-    animation: goTopRight 5s ease-in; 
+    animation: goTopRight 2s ease-in; 
     top: -37%;
     left: 37.5%;
     transform: scale(.4);
@@ -92,7 +97,7 @@ body{
 }
 
 .pre-2 {
-    animation: goBottomLeft 5s ease-in;
+    animation: goBottomLeft 2s ease-in;
     top: 32%;
     left: -42%;
     transform: scale(.4);
@@ -261,7 +266,7 @@ svg{
     background-color:white;
     border-radius: 30px;
     border: 2px solid gray;
-    margin-left: 40vw;
+    margin-left: 0vw;
 }
         
 .toggle:after {
@@ -359,43 +364,64 @@ span:nth-child(2){
     
 }
 .event-detail {
-    height: 100%;
-    width: 100%;
-}
-
-.event-d1 {
     position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.event--one {
+    position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.event-d1 .page-c {
+.event-detail .page-c {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
     left: 5%;
     top: -3%;
-    background-image: url('./../../image/Events/page-template.svg');
-    background-size: 100% 100%;
+    background-image: url('./../../image/Events/page-template.svg') ;
+    background-repeat: no-repeat;
+    background-size: 150% 105%;
     background-position: top;
     z-index: 1;
 }
 
-.event-d1 .img-c {
+.event-detail .img-c {
     height: 20vw;
     width: 22vw;
     position: absolute;
     top: 7%;
-    left: 8.5%;
+    left: 4%;
      background-image: url('./../../image/Events/image-container.svg');
-    background-size: 100% 100%;
+    background-size: 150% 100%;
     background-position: top;
 }
 
-.event-d1 .img-c img {
-    height: 100%;
-    width: 100%;
+.event-detail .img-c img {
+    height: 10%;
+    width: 10%;
+}
+
+.event-detail .text-c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -11.5%);
+    width: 68%;
+}
+
+.event-detail .text-c p {
+    font-family: bradEvent;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.event-d1 .text-c {
+    transform: translate(-50%, -11.5%);
+    display: none;
 }
 
 /* -------------- event description ends------- */
