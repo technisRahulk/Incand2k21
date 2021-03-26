@@ -11,6 +11,15 @@
         <link rel="stylesheet" href="./stylesheet/event/event.css">
     </head>
     <body>
+        <!-- post loader -->
+            <div class="preloader--1">
+                <img src="./image/Events/noShadow-upper-half.svg" alt="Post Loader" class="pre-img pre-1">
+            </div>
+            <div class="preloader--2">
+                <img src="/image/Events/noShadow-lower-half.svg" alt="Post Loader" class="pre-img pre-2">
+            </div>
+
+        <!-- heading -->
         <div class="heading">
             <h2>EVENTS</h2>
             <input type="checkbox" id="switch"
@@ -19,6 +28,7 @@
             <span>ONLINE</span><span>OFFLINE</span>
         </div>
         
+        <!-- Events content container -->
         <div class="container">
             <div id="offline_event">
                 <div class="date">
@@ -220,7 +230,7 @@
                         <div class="event-d1">
                             <div class="page-c">
                                 <div class="img-c">
-                                    <img src="./image/Events/image-container.svg" alt="">
+                                    <img src="./image/Events/full-corona-bg.svg" alt="" >
                                 </div>
                                 <div class="text c">
         
@@ -236,4 +246,9 @@
         </div>
     </body>
     <script src="./js/event/event.js"></script>
+    <script>
+        setTimeout(() => {
+            document.querySelector('.preloader').style.zIndex= "-1";
+        }, 6000); 
+    </script>
 </html>

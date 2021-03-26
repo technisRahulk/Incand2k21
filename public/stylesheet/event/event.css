@@ -14,23 +14,118 @@
     --color4:#F2C43A;
 }
 body{
-    background-color: #1D3444;
-    height: 700px;
+    background-image: url('./../../image/Events/Background.svg');
+    background-size: cover;
 }
+
+/* -------------------------------- post loader starts ---------------------------------------- */
+@keyframes goTopRight {
+    0% {
+        left: 0;
+        top: 0.1%;
+        transform: scale(1.6);
+        filter: drop-shadow(-62px 62px 80px transparent);
+    }
+    50% {
+        left: 0;
+        top: 0.1%;
+        transform: scale(1.6);
+        filter: drop-shadow(-62px 62px 80px transparent);
+    }
+    70% {
+        filter: drop-shadow(-62px 62px 35px #142530);
+    }
+    100% {
+    top: -37%;
+    left: 37.5%;
+    transform: scale(.4);
+    filter: drop-shadow(-62px 62px 35px #142530);
+    }
+}
+
+@keyframes goBottomLeft {
+    0% {
+        left: 0;
+        top: -0.1%;
+        transform: scale(1.6);
+        filter: drop-shadow(62px -62px 80px transparent);
+    }
+    50% {
+        left: 0;
+        top: -0.1%;
+        transform: scale(1.6);
+        filter: drop-shadow(62px -62px 80px transparent);
+    }
+    70% {
+        filter: drop-shadow(62px -62px 22px #142530);
+    }
+    100% {
+    top: 32%;
+    left: -42%;
+    transform: scale(.4);
+    filter: drop-shadow(62px -62px 22px #142530);
+    }
+}
+
+.preloader--1,
+.preloader--2 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 99999;
+}
+.pre-img  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.pre-1 {
+    animation: goTopRight 5s ease-in; 
+    top: -37%;
+    left: 37.5%;
+    transform: scale(.4);
+
+    filter: drop-shadow(-62px 62px 80px #142530);
+}
+
+.pre-2 {
+    animation: goBottomLeft 5s ease-in;
+    top: 32%;
+    left: -42%;
+    transform: scale(.4);
+
+    filter: drop-shadow(62px -62px 80px #142530);
+}
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+    /* ------------------- postloader ends -------------------------------- */
+
 .heading{
     width: 100%;
     color: white;
     font-size: 50px;
     text-align: center;
+    margin: 2vw auto;
+    margin-bottom: 1vw;
+}
+.heading h2 {
+    margin-bottom: -1vw;
 }
 .container{
-    margin: 0 12%;
+    width: 80vw;
+    max-width: 80vw;
+    margin: 3vw auto;
     margin-top: -1%;
     display: flex;
     height: 90%;
 }
 /* ------Offline events timeline begins----- */
-.date p{
+.date p {
     writing-mode: vertical-rl;
     text-orientation: upright;
     color: white;
@@ -75,6 +170,7 @@ body{
     padding: 10px;
     height: 20%;
     margin-left: 7%;
+    transition: all .4s;
 }
 .event-name p:nth-child(1){
     color: rgb(241, 35, 35);
@@ -83,6 +179,7 @@ body{
     font-size: 22px;
     padding-bottom: 5px;
 }
+
 .description{
     width: 60%;
     height: 100%;
@@ -90,23 +187,23 @@ body{
 hr{
     width:25%;
     border: none;
-    border-top: 3px dashed white;
+    border-top: 2.3px solid white;
 }
 .small-circle{
     content: '';
-    width: 13px;
-    height: 13px;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
     background-color: white;
     z-index:1;
-    margin-left: -15px;
+    margin-left: -12px;
 }
 .big-circle {
     content: '';
-    width: 25px;
-    height: 25px;
+    width: 21px;
+    height: 21px;
     background-color: white;
-    border: 4px solid rgb(241, 35, 35);
+    border:3.54px solid rgb(241, 35, 35);
     border-radius: 50%;
   }
 #day1{
@@ -148,25 +245,23 @@ svg{
 }
 
 .grow:hover{
-    width: 50%;
-    font-size: 30px;
+    transform: scale(1.2);
 }
-.grow:hover p:nth-child(1){
+/* .grow:hover p:nth-child(1){
     font-size: 30px;
-}
+} */
 /* ------Offline events timeline ends----- */
 
 /* <-----toggle button----> */
 .toggle {
-    position : absolute ;
+    position : relative ;
     display : inline-block;
     width : 150px;
     height : 42px;
     background-color:white;
     border-radius: 30px;
     border: 2px solid gray;
-    right: 20px;
-    top: 20px;
+    margin-left: 40vw;
 }
         
 .toggle:after {
@@ -259,6 +354,10 @@ span:nth-child(2){
 /* ---------------colour added to individual elements ends----------------- */
 
 /* -------------- event description begins------- */
+.description {
+    height: 100vh;
+    
+}
 .event-detail {
     height: 100%;
     width: 100%;
@@ -278,15 +377,20 @@ span:nth-child(2){
     left: 5%;
     top: -3%;
     background-image: url('./../../image/Events/page-template.svg');
-    background-size: 100% 120%;
+    background-size: 100% 100%;
+    background-position: top;
+    z-index: 1;
 }
 
 .event-d1 .img-c {
     height: 20vw;
-    width: 20vw;
+    width: 22vw;
     position: absolute;
-    top: 6%;
-    left: 11%;
+    top: 7%;
+    left: 8.5%;
+     background-image: url('./../../image/Events/image-container.svg');
+    background-size: 100% 100%;
+    background-position: top;
 }
 
 .event-d1 .img-c img {
