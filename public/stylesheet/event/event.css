@@ -1,76 +1,267 @@
-/* page title */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-* {
+*{
+    font-family: 'Righteous', cursive;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-body {
-    background: #1D3444;
-    max-width: 100vw;
-    overflow-x: hidden;
+:root{
+    --color1:#fe304f;
+    --color2:#118DEF;
+    --color3:#6F7B91;
+    --color5:#CE2849;
+    --color4:#F2C43A;
 }
-
-.page-title {
-    margin: 2.5vw auto;
-    text-align: center;
-    margin-top: 5vw;
+body{
+    background-color: #1D3444;
+    height: 700px;
 }
-
-.page-title h1 {
+.heading{
+    width: 100%;
     color: white;
-    font-size: 3.7rem;
-    font-family: 'Righteous', cursive;
-    letter-spacing: 5px;
-
+    font-size: 50px;
+    text-align: center;
 }
-
-.events {
-    display: grid;
-    display: -ms-grid;
-    max-width: 86vw;
-    width: 76vw;
-    margin: 5vw auto;
-    -ms-grid-rows: 120vh;
-     grid-template-rows: 120vh;
-    -ms-grid-columns: 2fr 5fr;
-     grid-template-columns: 2fr 5fr;
-     grid-template-areas: "timeline-area details-area";
-}
-
-.events-timeline {
-    grid-area: timeline-area;
-    background: red;
+.container{
+    margin: 0 12%;
+    margin-top: -1%;
     display: flex;
-    flex-direction: column;
+    height: 90%;
+}
+/* ------Offline events timeline begins----- */
+.date p{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    left:70px;
+}
+.date p:nth-child(1){
+    font-size: 78px;
+    top: 96px;
+}
+.date p:nth-child(2){
+    top: 285px;
+    left: 85px;
+}
+#offline_event{
+    width:50%;
+    display: block;
+}
+#online_event{
+    display: none;
+}
+.timeline{
+    /* width: 0%; */
+    content: '';
+    overflow-y: hidden;
+    margin-left: 1%;
+}
+.container-event{
+    display: flex;
+    align-items: center;
+}
+.arrow{
+    height:120px;
+    width: 15px;
+    clip-path: polygon(50% 0, 0% 10%, 0% 100%, 50% 90%, 100% 100%, 100% 10%);
+}
+.event-name{
+    background-color: white;
+    width: 40%;
+    border-radius: 7px;
+    padding: 10px;
+    height: 20%;
+    margin-left: 7%;
+}
+.event-name p:nth-child(1){
+    color: rgb(241, 35, 35);
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+.description{
+    width: 60%;
+    height: 100%;
+}
+hr{
+    width:25%;
+    border: none;
+    border-top: 3px dashed white;
+}
+.small-circle{
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    z-index:1;
+    margin-left: -15px;
+}
+.big-circle {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 4px solid rgb(241, 35, 35);
+    border-radius: 50%;
+  }
+#day1{
+    display: block;
+    transition: 2s ease-in;
+}
+#day2{
+    margin-top: 5%;
+    display: none;
+    transition: 2s ease-in;
+
+}
+.pointer{
+    height:20px;
+    width: 20px;
+    cursor: pointer;
+    margin: 1% 60%;
+    
+}
+svg{
+    width: 21px;
+    height: 21px
 }
 
-.event-t1 {
-    flex: 1;
-    background: blue;
+.pointer:hover{
+    animation: pointer 1s linear infinite;
+
 }
-.event-t2 {
-    flex: 1;
-    background: green;
+@keyframes pointer{
+    0%,100%{
+        margin-top: 0;
+    }
+    50%{
+        margin-top: 1%;
+    }
 }
-.event-t3 {
-    flex: 1;
-    background: pink;
-}
-.event-t4 {
-    flex: 1;
-    background: violet;
-}
-.event-t5 {
-    flex: 1;
-    background: brown;
+#day2 .pointer{
+    transform: rotateX(180deg);
 }
 
+.grow:hover{
+    width: 50%;
+    font-size: 30px;
+}
+.grow:hover p:nth-child(1){
+    font-size: 30px;
+}
+/* ------Offline events timeline ends----- */
+
+/* <-----toggle button----> */
+.toggle {
+    position : absolute ;
+    display : inline-block;
+    width : 150px;
+    height : 42px;
+    background-color:white;
+    border-radius: 30px;
+    border: 2px solid gray;
+    right: 20px;
+    top: 20px;
+}
+        
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 77px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: black;
+    top: -2px; 
+    left: -2px;
+    transition:  all 0.5s;
+}
+        
+span{
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 22%;
+    padding: auto;
+}
+span:nth-child(1){
+    right: 59%;
+}
+span:nth-child(2){
+    right: 5%;
+}
+
+.checkbox:checked + .toggle::after {
+    left : 71px; 
+}
+        
+.checkbox:checked + .toggle {
+    background-color: white;
+}
+
+.checkbox { 
+    display : none;
+}
+/* <-----toggle button----> */
+
+/* ---------------colour added to individual elements----------------- */
+.container-event:nth-child(1) .arrow{
+    background-color: var(--color1);
+}
+.container-event:nth-child(2) .arrow{
+    background-color: var(--color2);
+}
+.container-event:nth-child(3) .arrow{
+    background-color: var(--color3);
+}
+.container-event:nth-child(4) .arrow{
+    background-color: var(--color4);
+}
+.container-event:nth-child(5) .arrow{
+    background-color: var(--color5);
+}
+.container-event:nth-child(1) .big-circle{
+    border-color: var(--color1);   
+}
+.container-event:nth-child(2) .big-circle{
+    border-color: var(--color2);   
+}
+.container-event:nth-child(3) .big-circle{
+    border-color: var(--color3);   
+}
+.container-event:nth-child(4) .big-circle{
+    border-color: var(--color4);   
+}
+.container-event:nth-child(5) .big-circle{
+    border-color: var(--color5);   
+}
+.container-event:nth-child(1) p:nth-child(1){
+    color: var(--color1);
+}
+.container-event:nth-child(2) p:nth-child(1){
+    color: var(--color2);
+}
+.container-event:nth-child(3) p:nth-child(1){
+    color: var(--color3);
+}
+.container-event:nth-child(4) p:nth-child(1){
+    color: var(--color4);
+}
+.container-event:nth-child(5) p:nth-child(1){
+    color: var(--color5);
+}
+
+/* ---------------colour added to individual elements ends----------------- */
+
+/* -------------- event description begins------- */
 .event-detail {
-    grid-area: details-area;
-    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .event-d1 {
@@ -80,24 +271,27 @@ body {
 }
 
 .event-d1 .page-c {
+    content: '';
     position: absolute;
-    height: 90%;
+    height: 100%;
     width: 100%;
     left: 5%;
-    top: 5%;
+    top: -3%;
     background-image: url('./../../image/Events/page-template.svg');
-    background-size: 100% 100%;
+    background-size: 100% 120%;
 }
 
 .event-d1 .img-c {
     height: 20vw;
     width: 20vw;
     position: absolute;
-    top: 10%;
-    left: 14%;
+    top: 6%;
+    left: 11%;
 }
 
 .event-d1 .img-c img {
     height: 100%;
     width: 100%;
 }
+
+/* -------------- event description ends------- */
