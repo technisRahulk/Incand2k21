@@ -1,86 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
+  font-family: sans-serif;
 }
 
-#background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1368px;
-    height: 700px;
-    background: url(../../image/home/wolake.png) no-repeat;
-    z-index: -2;
-    background-size: cover;
+video {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  z-index: 0;
 }
 
-#mountain {
-    position: absolute;
-    top: 30px;
-    left: 0px;
-    width: 1368px;
-    height: 700px;
-    background: url(../../image/home/m1.png) no-repeat;
-    background-size: cover;
-    z-index: 0;
+.intro {
+  position: relative;
+  height: 100vh;
+  font-family: Oswald;
+  color: white;
 }
 
-#cloud {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 1368px;
-    height: 350px;
-    background: url(../../image/home/cloud1.png);
-    animation: animate 120s linear infinite;
-    z-index: -1;
+.hide {
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
 }
 
-#tent1 {
-    position: absolute;
-    top: 308px;
-    left: 268px;
-    width: 165px;
-    height: 149px;
-    z-index: 1;
+.hide_1 {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 120px;
 }
 
-#tent2 {
-    position: absolute;
-    top: 338px;
-    left: 378px;
-    width: 185px;
-    height: 160px;
-    z-index: 1;
+.hide_1 .i20 {
+  font-size: 100px;
+  float: left;
 }
 
-#plank {
-    position: absolute;
-    top: 328px;
-    left: 588px;
-    width: 150px;
-    height: 250px;
-    transform: rotate(5deg);
-    z-index: 2;
+.hide_2 {
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 120px;
 }
 
-#tentContainer {
-    transform: translate(0px, 0px) scale(1, 1);
+.hide_2 .i20_2 {
+  font-size: 40px;
 }
 
-#musicControl {
-    position: absolute;
-    top: 500px;
-    left: 100px;
+.hide_3 {
+  top: 55%;
+  left: 10%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 5rem;
+  height: 15rem;
 }
 
-@keyframes animate {
-    0% {
-        background-position: 0px;
-    }
-    100% {
-        background-position: -2000px;
-    }
+.hide_3 .logo {
+  position: absolute;
+  z-index: 1;
+  width: 5rem;
 }
+
+.hide_4 {
+  z-index: 80 !important;
+  width: 80vw;
+  height: 6rem;
+}
+/*# sourceMappingURL=style.css.map */
