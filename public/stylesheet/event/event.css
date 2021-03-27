@@ -124,8 +124,7 @@ body{
 .container{
     width: 80vw;
     max-width: 80vw;
-    margin: 3vw auto;
-    margin-top: -1%;
+    margin: 2vw auto 0;
     display: flex;
     height: 90%;
 }
@@ -157,7 +156,7 @@ body{
     /* width: 0%; */
     content: '';
     overflow-y: hidden;
-    margin-left: 1%;
+    margin-top: 12%;
 }
 .container-event{
     display: flex;
@@ -225,7 +224,7 @@ hr{
     height:20px;
     width: 20px;
     cursor: pointer;
-    margin: 1% 60%;
+    margin: 1% 55%;
     
 }
 svg{
@@ -273,7 +272,7 @@ svg{
     content: '';
     position: absolute;
     width: 77px;
-    height: 45px;
+    height: 43px;
     border-radius: 30px;
     background-color: black;
     top: -2px; 
@@ -411,15 +410,53 @@ span:nth-child(2){
     left: 50%;
     transform: translate(-50%, -11.5%);
     width: 68%;
+    /* z-index: 9999; */
 }
-
+div .date{
+    position: absolute;
+    bottom: 1%;
+}
 .event-detail .text-c p {
     font-family: bradEvent;
-    font-weight: 500;
+    font-weight: 800;
     line-height: 23px;
+    height: 70%;
 }
 
 .event-d1 .text-c {
+    transform: translate(-50%, -11.5%);
+    /* display: none; */
+}
+.event-d2 .text-c {
+    transform: translate(-50%, -11.5%);
+    display: none;
+    display: ;
+}
+.event-d3 .text-c {
+    transform: translate(-50%, -11.5%);
+    display: none;
+}
+.event-d4 .text-c {
+    transform: translate(-50%, -11.5%);
+    display: none;
+}
+.event-d5 .text-c {
+    transform: translate(-50%, -11.5%);
+    display: none;
+}
+.event-d6 .text-c {
+    transform: translate(-50%, -16.5%);
+    display: none;
+}
+.event-d7 .text-c {
+    transform: translate(-50%, -6.5%);
+    display: none;
+}
+.event-d8 .text-c {
+    transform: translate(-50%, -11.5%);
+    display: none;
+}
+.event-d9 .text-c {
     transform: translate(-50%, -11.5%);
     display: none;
 }
