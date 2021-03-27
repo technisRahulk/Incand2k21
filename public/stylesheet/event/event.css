@@ -407,7 +407,7 @@ span:nth-child(2){
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -11.5%);
+    transform: translate(-50%, -18.5%);
     width: 68%;
     height: 30%;
     z-index: 1;
@@ -415,50 +415,46 @@ span:nth-child(2){
 }
 .event-detail .text-c .date{
     position: absolute;
-    bottom: 1%;
+    bottom: -55%;
 }
 .event-detail .text-c p {
+    /* border: 1px solid red; */
     font-family: bradEvent;
     font-weight: 800;
     line-height: 23px;
-    height: 70%;
+    height: 300px;
+    overflow-y: scroll;
     z-index: 2;
+    scrollbar-width: none;
 }
-
+.event-detail .text-c p::-webkit-scrollbar{
+    display:none;
+}
 .event--one .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 .event--two .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 .event--three .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 .event--four .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 .event--five .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 .event--six .text-c {
-    transform: translate(-50%, -16.5%);
-    display: none;
-}
-.event--seven .text-c {
-    transform: translate(-50%, -6.5%);
     /* display: none; */
 }
+.event--seven .text-c {
+    display: none;
+}
 .event--eight .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 .event--nine .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 
