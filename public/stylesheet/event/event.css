@@ -88,7 +88,7 @@ body{
     height: 100vh;
 }
 .pre-1 {
-    animation: goTopRight 2s ease-in; 
+    /* animation: goTopRight 2s ease-in;  */
     top: -37%;
     left: 37.5%;
     transform: scale(.4);
@@ -97,7 +97,7 @@ body{
 }
 
 .pre-2 {
-    animation: goBottomLeft 2s ease-in;
+    /* animation: goBottomLeft 2s ease-in; */
     top: 32%;
     left: -42%;
     transform: scale(.4);
@@ -368,7 +368,7 @@ span:nth-child(2){
     width: 100%;
 }
 
-.event--one {
+.event-d1 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -385,7 +385,6 @@ span:nth-child(2){
     background-repeat: no-repeat;
     background-size: 150% 105%;
     background-position: top;
-    z-index: 1;
 }
 
 .event-detail .img-c {
@@ -410,9 +409,11 @@ span:nth-child(2){
     left: 50%;
     transform: translate(-50%, -11.5%);
     width: 68%;
-    /* z-index: 9999; */
+    height: 30%;
+    z-index: 1;
+    /* background-color: yellow; */
 }
-div .date{
+.event-detail .text-c .date{
     position: absolute;
     bottom: 1%;
 }
@@ -421,42 +422,42 @@ div .date{
     font-weight: 800;
     line-height: 23px;
     height: 70%;
+    z-index: 2;
 }
 
-.event-d1 .text-c {
-    transform: translate(-50%, -11.5%);
-    /* display: none; */
-}
-.event-d2 .text-c {
-    transform: translate(-50%, -11.5%);
-    display: none;
-    display: ;
-}
-.event-d3 .text-c {
+.event--one .text-c {
     transform: translate(-50%, -11.5%);
     display: none;
 }
-.event-d4 .text-c {
+.event--two .text-c {
     transform: translate(-50%, -11.5%);
     display: none;
 }
-.event-d5 .text-c {
+.event--three .text-c {
     transform: translate(-50%, -11.5%);
     display: none;
 }
-.event-d6 .text-c {
+.event--four .text-c {
+    transform: translate(-50%, -11.5%);
+    display: none;
+}
+.event--five .text-c {
+    transform: translate(-50%, -11.5%);
+    display: none;
+}
+.event--six .text-c {
     transform: translate(-50%, -16.5%);
     display: none;
 }
-.event-d7 .text-c {
+.event--seven .text-c {
     transform: translate(-50%, -6.5%);
-    display: none;
+    /* display: none; */
 }
-.event-d8 .text-c {
+.event--eight .text-c {
     transform: translate(-50%, -11.5%);
     display: none;
 }
-.event-d9 .text-c {
+.event--nine .text-c {
     transform: translate(-50%, -11.5%);
     display: none;
 }
