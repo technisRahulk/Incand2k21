@@ -7,6 +7,7 @@
 }
 
 body {
+  position: relative;
   font-family: sans-serif;
 }
 
@@ -28,6 +29,38 @@ video {
   height: 100vh;
   font-family: Oswald;
   color: white;
+}
+
+.intro .scrolldown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 20;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 100px;
+  height: 50px;
+  -webkit-transform: translate(-50%, -90%);
+          transform: translate(-50%, -90%);
+  text-align: center;
+  font-size: 14px;
+}
+
+.intro #scrollanim {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
 }
 
 .hide {
