@@ -7,8 +7,11 @@
         <meta http-equiv="X-UA-Comaptible" content="ie=edge"/>
         <link rel="icon" href="/image/i.png" type="image/png">
         <meta name="Incandescence Event Page" content="Events in Incandescence 2020 | NIT Silchar">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="./stylesheet/event/event.css">
+         
     </head>
     <body>
         <!-- post loader -->
@@ -22,205 +25,197 @@
         <!-- heading -->
         <div class="heading">
             <h2>EVENTS</h2>
-            <input type="checkbox" id="switch"
-                    class="checkbox" />
+            <input type="checkbox" id="switch" class="checkbox" />
             <label for="switch" class="toggle">
-            <span>ONLINE</span><span>OFFLINE</span>
+            <div class="toggle-cover"></div>
+            <!--<span>ONLINE</span><span>OFFLINE</span>-->
+            <button id="button1" class="slide slide-left">OFFLINE</button>
+            <button id="button2" class="slide slide-right">ONLINE</button>
         </div>
         
         <!-- Events content container -->
         <div class="container">
-            <div id="offline_event">
-                
-                <div class="timeline">
-                    <div id="day1">
-                        <div class="container-event">
-                            <div class="arrow">
+            <div class="liner">
+                <div class="innerLiner">
+                    <div id="offline_event">
+                        <div class="timeline">
+                            <div id="day1">
+                                <div class="container-event">
+                                    <div class="arrow">
 
-                            </div>
-                            <div class="small-circle"></div>
-                            <hr>
-                            <div class="big-circle"></div>
-                            <div class="event-name grow" id="btnoff-e1">
-                                <p>Face Painting</p>
-                                <p class="time">11:00 - 13:00</p>
-                            </div>
-                        </div>
-                        <div class="container-event">
-                            <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnoff-e1">
+                                        <p>Face Painting</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                                </div>
+                                <div class="container-event">
+                                    <div class="arrow">
 
-                            </div>
-                            <div class="small-circle"></div>
-                            <hr>
-                            <div class="big-circle"></div>
-                            <div class="event-name grow"  id="btnoff-e2">
-                                <p>Ground Zero</p>
-                                <p class="time">11:00 - 13:00</p>
-                            </div>
-                        </div>
-                        <div class="container-event">
-                            <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow"  id="btnoff-e2">
+                                        <p>Ground Zero</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                                </div>
+                                <div class="container-event">
+                                    <div class="arrow">
 
-                            </div>
-                            <div class="small-circle"></div>
-                            <hr>
-                            <div class="big-circle"></div>
-                            <div class="event-name grow" id="btnoff-e3">
-                                <p>Glitterati</p>
-                                <p class="time">11:00 - 13:00</p>
-                            </div>
-                        </div>
-                        <div class="container-event">
-                            <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnoff-e3">
+                                        <p>Glitterati</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                                </div>
+                                <div class="container-event">
+                                    <div class="arrow">
 
-                            </div>
-                            <div class="small-circle"></div>
-                            <hr>
-                            <div class="big-circle"></div>
-                            <div class="event-name grow" id="btnoff-e4">
-                                <p>Nirvana</p>
-                                <p class="time">11:00 - 13:00</p>
-                            </div>
-                        </div>
-                        <div class="container-event">
-                            <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnoff-e4">
+                                        <p>Nirvana</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                                </div>
+                                <div class="container-event">
+                                    <div class="arrow">
 
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnoff-e5">
+                                        <p>Thundermarch</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                                </div>
+                                <div class="pointer" id="btn1">
+                                </div>
                             </div>
-                            <div class="small-circle"></div>
-                            <hr>
-                            <div class="big-circle"></div>
-                            <div class="event-name grow" id="btnoff-e5">
-                                <p>Thundermarch</p>
-                                <p class="time">11:00 - 13:00</p>
-                            </div>
-                        </div>
-                        <div class="pointer" id="btn1">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="50%" y="0px" width="512px" height="512px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
-                            <g>
-                                <g>
-                                    <path d="M135.899,167.877c1.902,1.902,4.093,2.851,6.567,2.851s4.661-0.948,6.562-2.851L282.082,34.829    c1.902-1.903,2.847-4.093,2.847-6.567s-0.951-4.665-2.847-6.567L267.808,7.417c-1.902-1.903-4.093-2.853-6.57-2.853    c-2.471,0-4.661,0.95-6.563,2.853L142.466,119.622L30.262,7.417c-1.903-1.903-4.093-2.853-6.567-2.853    c-2.475,0-4.665,0.95-6.567,2.853L2.856,21.695C0.95,23.597,0,25.784,0,28.262c0,2.478,0.953,4.665,2.856,6.567L135.899,167.877z" fill="#FFFFFF"/>
-                                    <path d="M267.808,117.053c-1.902-1.903-4.093-2.853-6.57-2.853c-2.471,0-4.661,0.95-6.563,2.853L142.466,229.257L30.262,117.05    c-1.903-1.903-4.093-2.853-6.567-2.853c-2.475,0-4.665,0.95-6.567,2.853L2.856,131.327C0.95,133.23,0,135.42,0,137.893    c0,2.474,0.953,4.665,2.856,6.57l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854l133.054-133.046    c1.902-1.903,2.847-4.093,2.847-6.565c0-2.474-0.951-4.661-2.847-6.567L267.808,117.053z" fill="#FFFFFF"/>
-                                </g>
-                            </g>
-                        </svg></div>
-                    </div>
-                    <div id="day2">
-                        <div class="container-event">
-                            <div class="arrow">
+                            <div id="day2">
+                                <div class="container-event">
+                                    <div class="arrow">
 
-                            </div>
-                            <div class="small-circle"></div>
-                            <hr>
-                            <div class="big-circle"></div>
-                            <div class="event-name grow" id="btnoff-e6">
-                                <p>Zyka~Food Festival</p>
-                                <p class="time">11:00 - 13:00</p>
-                            </div>
-                        </div>
-                        <div class="container-event">
-                            <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnoff-e6">
+                                        <p>Zyka~Food Festival</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                                </div>
+                                <div class="container-event">
+                                    <div class="arrow">
 
-                            </div>
-                            <div class="small-circle"></div>
-                            <hr>
-                            <div class="big-circle"></div>
-                            <div class="event-name grow" id="btnoff-e7">
-                                <p>Open Mic</p>
-                                <p class="time">11:00 - 13:00</p>
-                            </div>
-                        </div>
-                        <div class="container-event">
-                            <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnoff-e7">
+                                        <p>Open Mic</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                                </div>
+                                <div class="container-event">
+                                    <div class="arrow">
 
-                            </div>
-                            <div class="small-circle"></div>
-                            <hr>
-                            <div class="big-circle"></div>
-                            <div class="event-name grow" id="btnoff-e8">
-                                <p>Comedy Nights</p>
-                                <p class="time">11:00 - 13:00</p>
-                            </div>
-                        </div>
-                        <div class="container-event">
-                            <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnoff-e8">
+                                        <p>Comedy Nights</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                                </div>
+                                <div class="container-event">
+                                    <div class="arrow">
 
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnoff-e9">
+                                        <p>CarpeDiem Nights</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                                </div>
+                                <div class="pointer" id="btn2">
+                                </div>
                             </div>
-                            <div class="small-circle"></div>
-                            <hr>
-                            <div class="big-circle"></div>
-                            <div class="event-name grow" id="btnoff-e9">
-                                <p>CarpeDiem Nights</p>
-                                <p class="time">11:00 - 13:00</p>
-                            </div>
-                        </div>
-                        <div class="pointer" id="btn2">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="50%" y="0px" width="512px" height="512px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <path d="M135.899,167.877c1.902,1.902,4.093,2.851,6.567,2.851s4.661-0.948,6.562-2.851L282.082,34.829    c1.902-1.903,2.847-4.093,2.847-6.567s-0.951-4.665-2.847-6.567L267.808,7.417c-1.902-1.903-4.093-2.853-6.57-2.853    c-2.471,0-4.661,0.95-6.563,2.853L142.466,119.622L30.262,7.417c-1.903-1.903-4.093-2.853-6.567-2.853    c-2.475,0-4.665,0.95-6.567,2.853L2.856,21.695C0.95,23.597,0,25.784,0,28.262c0,2.478,0.953,4.665,2.856,6.567L135.899,167.877z" fill="#FFFFFF"/>
-                                        <path d="M267.808,117.053c-1.902-1.903-4.093-2.853-6.57-2.853c-2.471,0-4.661,0.95-6.563,2.853L142.466,229.257L30.262,117.05    c-1.903-1.903-4.093-2.853-6.567-2.853c-2.475,0-4.665,0.95-6.567,2.853L2.856,131.327C0.95,133.23,0,135.42,0,137.893    c0,2.474,0.953,4.665,2.856,6.57l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854l133.054-133.046    c1.902-1.903,2.847-4.093,2.847-6.565c0-2.474-0.951-4.661-2.847-6.567L267.808,117.053z" fill="#FFFFFF"/>
-                                    </g>
-                                </g>
-                            </svg>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div id="online_event">
-                <div class="container-event">
-                        <div class="arrow">
+                    <div id="online_event">
+                        <div class="timeline">
+                            <div class="container-event">
+                                    <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnon-e1">
+                                        <p>Meme competition</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                            </div>
+                            <div class="container-event">
+                                    <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnon-e2">
+                                        <p>Hymn for Incand</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                            </div>
+                            <div class="container-event">
+                                    <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnon-e3">
+                                        <p>Natraaz</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                            </div>
+                            <div class="container-event">
+                                    <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow" id="btnon-e4">
+                                        <p>Director's Cut</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                            </div>
+                            <div class="container-event">
+                                    <div class="arrow">
+                                    </div>
+                                    <div class="small-circle"></div>
+                                    <hr>
+                                    <div class="big-circle"></div>
+                                    <div class="event-name grow"  id="btnon-e5">
+                                        <p>Frames</p>
+                                        <p class="time">11:00 - 13:00</p>
+                                    </div>
+                            </div>
                         </div>
-                        <div class="small-circle"></div>
-                        <hr>
-                        <div class="big-circle"></div>
-                        <div class="event-name grow" id="btnon-e1">
-                            <p>Meme competition</p>
-                            <p class="time">11:00 - 13:00</p>
-                        </div>
-                </div>
-                <div class="container-event">
-                        <div class="arrow">
-                        </div>
-                        <div class="small-circle"></div>
-                        <hr>
-                        <div class="big-circle"></div>
-                        <div class="event-name grow" id="btnon-e2">
-                            <p>Hymn for Incand</p>
-                            <p class="time">11:00 - 13:00</p>
-                        </div>
-                </div>
-                <div class="container-event">
-                        <div class="arrow">
-                        </div>
-                        <div class="small-circle"></div>
-                        <hr>
-                        <div class="big-circle"></div>
-                        <div class="event-name grow" id="btnon-e3">
-                            <p>Natraaz</p>
-                            <p class="time">11:00 - 13:00</p>
-                        </div>
-                </div>
-                <div class="container-event">
-                        <div class="arrow">
-                        </div>
-                        <div class="small-circle"></div>
-                        <hr>
-                        <div class="big-circle"></div>
-                        <div class="event-name grow" id="btnon-e4">
-                            <p>Director's Cut</p>
-                            <p class="time">11:00 - 13:00</p>
-                        </div>
-                </div>
-                <div class="container-event">
-                        <div class="arrow">
-                        </div>
-                        <div class="small-circle"></div>
-                        <hr>
-                        <div class="big-circle"></div>
-                        <div class="event-name grow"  id="btnon-e5">
-                            <p>Frames</p>
-                            <p class="time">11:00 - 13:00</p>
-                        </div>
+                    </div>
                 </div>
             </div>
             <div class="description">
@@ -237,11 +232,10 @@
                                         amidst all the suffering, it has also unleashed the artistic fire in us and led to a path of self discovery. From
                                         Dalgona coffee to Instagram reels, we have let loose the child inside us and danced to the colors of joy. But the scars
                                         cannot be healed in a day or two. So in order to recover from the confinement of darkness, Incandescence '21 brings to
-                                        all the Face Painting Competition. A one of a kind event where your colors transform the human face into an illusory
-                                        piece of art. Celebrate the artist in you and let the brush replicate your dreams into reality. Join us on the 14th of
+                                        all the <strong>Face Painting Competition</strong>. A one of a kind event where your colors transform the human face into an illusory
+                                        piece of art. Celebrate the artist in you and let the brush replicate your dreams into reality.
+                                        <br><br> Join us on the 17th of
                                         April 2021 at National Institute of Technology, Silchar to be a part of this joyous carnival of colours.
-                                        <br>
-                                        <br>
                                         <br>
                                     </p>
                                         <div  class="date"><strong>Date: 17/ 04/ 2021</strong></div>
@@ -256,14 +250,12 @@
                                 </div>
                                 <div class="text-c">
                                     <p>
-                                        “Dance is the hidden language of the soul.”
-                                        <br>
-                                        <strong>Martha Graham</strong> 
-                                        
+                                        <i>“Dance is the hidden language of the soul."</i>~
+                                        Martha Graham <br><br>
                                         The Dance Module of Incandescence, is one of the most awaited events for all dance enthusiasts across the campus. With
                                         nerve wrenching grooves and moonwalks ready to set the stage on fire, it's time to gear up for one of the biggest Dance
-                                        Jam of North East India, GROUND ZERO. With powerful dance moves and expression, break the barriers and express yourself
-                                        competing with people all around the campus.
+                                        Jam of North East India,<strong> GROUND ZERO</strong>. With powerful dance moves and expression, break the barriers and express yourself
+                                        competing with people all around the campus.<br>
                                         Ground Zero is inviting all enthusiastic dancers to showcase their talents and rock the stage of Incandescence 2021 this
                                         April. With things slowly going back to normalcy,let's dance our way into the new Post Covid world. Covid warriors
                                         dealing with pandemic ensured that we don't panic, releasing their strong dance videos. So whats stopping you to dance
@@ -282,6 +274,15 @@
                                 </div>
                                 <div class="text-c">
                                     <p>
+                                    <i>Fashion is an art and you are the canvas.</i><br><br>
+                                    Do you like the feel of silk against your skin, the lights flashing brightly, the transformation and 
+                                    confidence that a beautiful attire brings?  Then make sure not to miss <b>Glitterati</b> where glamour, magic, 
+                                    romance, lights and colours get intricately woven. The excitement of this fashion show is unrivalled as students 
+                                    and famous models walk hand in hand to present their best. Bubbling with one of a kind beauty, happiness and youth, 
+                                    they will make you desperate to walk on the runaway along with them.<br><br>
+                                    Team Glitterati of NITS, invites you all to witness history as the night comes alive and your eyes brighten at the 
+                                    sight of our most elaborate fashion show yet.<br><br>
+                                    We assure you that you will not want to sit this one out.
                                         
 
                                     </p>
@@ -290,14 +291,24 @@
                             </div>
                         </div>
                         <!---Nirvana--->
-                        <div class="event-d4 event--four" id="detail-off4">
+                        <div class="event-d1 event--four" id="detail-off4">
                             <div class="page-c">
                                 <div class="img-c">
                                     <img src="" alt="">
                                 </div>
                                 <div class="text-c">
                                     <p>
-                                        
+                                        <i>Against the assault of laughter, nothing can stand.</i><br>
+                                          &emsp;~ Mark Twain
+                                        <br><br>
+                                        <b>Nirvana</b> brings to you the joy of laughter and the beauty of poetry together. Hosting a range
+                                         of popular comics and poets from across the country Nirvana has a reputation of presenting 
+                                         you an endearing and enthralling night. The night comes to an end with an electric performance. 
+                                         A mix of everything from Hip-Hop to Indian to hard-hitting trap to electro house Everything in
+                                          this night will pump up to rock the stage at NIT Silchar. 
+                                          <br><br>
+                                        “Making the hearts happy and light,<br>
+                                        All with the comedy night”.
 
                                     </p>
                                     <div  class="date"><strong>Date: 17/ 04/ 2021</strong></div>
@@ -305,14 +316,21 @@
                             </div>
                         </div>
                         <!---Thundermarch--->
-                        <div class="event-d5 event--five" id="detail-off5">
+                        <div class="event-d1 event--five" id="detail-off5">
                             <div class="page-c">
                                 <div class="img-c">
                                     <img src="" alt="">
                                 </div>
                                 <div class="text-c">
-                                    <p>
-                                       
+                                    <p><br>
+                                       <b>Thundermarch</b> gives you a chance to witness and feel the heavy blast and death growls of metal,
+                                        as a plethora of highest degree of metal bands from across the country battle their path to ultimate 
+                                        glory. Graced by the performance of legendary metal bands like Polyphia, Guthrie Govan, Chronic Xorn,
+                                         Underground Authority, Polar Lights, Loish, Parikrama, Underside, Undying.inc, Third Sovereign, Junkyard 
+                                         Groove and Parashara in the past years, Thundermarch had never failed to satisfy your appetite for face-melting 
+                                         riffs and virtuosic metal growls.<br>
+                                          So whether you are a death metal fan or a hard rock fan, get ready to 
+                                         experience the electric atmosphere as Incandescence brings you one of the biggest metal fest of India.
 
                                     </p>
                                     <div  class="date"><strong>Date: 17/ 04/ 2021</strong></div>
@@ -320,22 +338,22 @@
                             </div>
                         </div>
                         <!---Food festival--->
-                        <div class="event-d6 event--six" id="detail-off6">
+                        <div class="event-d1 event--six" id="detail-off6">
                             <div class="page-c">
                                 <div class="img-c">
                                     <img src="" alt="">
                                 </div>
                                 <div class="text-c">
                                     <p>
-                                       <i><strong>FOOD</strong> is not rational. Food is Culture, Habit, Craving and Identity.</i>
+                                       FOOD is not rational. Food is Culture, Habit, Craving and Identity.
                                        <br><br>
-                                       Exploding with flavours, fresh spices, old recipes and new innovations, Jayka has returned to win our hearts irrevocably.  
-                                       Aptly named ‘The Carnival Of Bites’, NITS’s Jayka is a whole spiritual experience in itself. Experience heaven as you taste 
+                                       Exploding with flavours, fresh spices, old recipes and new innovations, <b>Jayka</b> has returned to win our hearts irrevocably.  
+                                       Aptly named <b>‘The Carnival Of Bites’</b>, NITS’s Jayka is a whole spiritual experience in itself. Experience heaven as you taste 
                                        our rich decadent shakes and cakes, spicy chicken wings and fragrant mouth-watering biryani, but these are just the tip of 
                                        the iceberg, whatever your heart desires Jayka has it all.  
                                        <br><br>
                                        So forget all rationality, all those diet plans and calorie counts, and join us in National Institute of Technology, Silchar
-                                       on the nth day of April to indulge in the most delectable morsels prepared by the most talented chefs present in the college. 
+                                       on the 18th day of April to indulge in the most delectable morsels prepared by the most talented chefs present in the college. 
                                        <br><br>
                                        WE promise that once you start, you simply won’t be able to stop.
                                        <br><br>
@@ -345,13 +363,14 @@
                             </div>
                         </div>
                         <!---Open Mic--->
-                        <div class="event-d7 event--seven" id="detail-off7">
+                        <div class="event-d1 event--seven" id="detail-off7">
                             <div class="page-c">
                                 <div class="img-c">
                                     <img src="" alt="">
                                 </div>
                                 <div class="text-c">
                                     <p>
+                                        <br>
                                         <i>"You will never know your limits until you push yourself to them".</i>
                                         <br><br>
                                         Incandescence, NIT Silchar 2021 gives you a chance to showcase your talent infront 
@@ -368,14 +387,20 @@
                             </div>
                         </div>
                         <!---Comedy Nights--->
-                        <div class="event-d8 event--eight" id="detail-off8">
+                        <div class="event-d1 event--eight" id="detail-off8">
                             <div class="page-c">
                                 <div class="img-c">
                                     <img src="" alt="">
                                 </div>
                                 <div class="text-c">
-                                    <p>
-                                  
+                                    <p><br>
+                                        Life is full of flavours be it sweet, salty, bitter or spicy, and comedy happens to be an embodiment 
+                                        of all those flavours. A life without humour is a wasted one for it is not the days that matter but 
+                                        the moments we cherish with laughter and joy. Hence, keeping the spirit of NITSians alive, Incandescence brings
+                                         to all <b>Comedy Night</b>, one of the most awaited events of the entire fest. Whether you’re a stand up fan or a meme
+                                          enthusiast, Comedy Night promises to keep you hooked to your seats with a chuckle on your face. Previously graced by 
+                                          renowned comedians like Karunesh Talwar and Aakash Mehta, Incand is incomplete without a trip to the wholesome evening 
+                                          of Comedy Night with your buddies.
 
                                     </p>
                                     <div  class="date"><strong>Date: 18/ 04/ 2021</strong></div>
@@ -383,17 +408,140 @@
                             </div>
                         </div>
                         <!---Carpediem Nights--->
-                        <div class="event-d9 event--nine" id="detail-off9">
+                        <div class="event-d1 event--nine" id="detail-off9">
                             <div class="page-c">
                                 <div class="img-c">
                                     <img src="" alt="">
                                 </div>
                                 <div class="text-c">
                                     <p>
-                                  
+                                    "Pluck it, sieze it and live the happy time before it's gone."
+                                    <br><br>
+                                    <b>Carpe Diem Nights</b> as called, this module is definitely the one not to be missed. The culmination of four 
+                                    days, with lights, music, flashes and the happy vibe, these all define what bliss is.
+                                    On a Carpe Diem night, you would basically find your favorite artist on the stage, performing with all 
+                                    heart and making your night the happiest one. Don't you worry if that's not your favourite, the night will
+                                     reach that level of comfort and gaze that you will remember it forever. That's the magic of Carpe Diem. 
+                                     The relishing performances, the unstoppable beats of the bands, the hopping auditorium, what else one needs
+                                      to live in the moment, which is not only happening but really existing. 
+                                    <br><br>
+                                    Carpe Diem Awaits!!
 
                                     </p>
                                     <div  class="date"><strong>Date: 18/ 04/ 2021</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!----ONLINE EVENTS--->
+                        <!----Meme Competition--->
+                        <div class="event-d1 event--ten" id="detail-off10">
+                            <div class="page-c">
+                                <div class="img-c">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="text-c">
+                                    <p> <br>
+                                        "You feel your strength in the experience of pain.." <br><br>
+
+                                        Bored up of the unspirited life with the enerving pandemic round the corner..? Fear not ..
+                                         Dear incandee.. Coz we present you the fascinating and the intriguing meme making contest .. <b>Meme me Out </b>
+                                        
+                                        With the meme ideas "naruto running" across your mind... Get ready to meme_ify people and raise your "stonks".<br><br>
+
+                                        Do engage yourselves here and summon the meme lord in you ...!
+                                    </p>
+                                    <div  class="date"><strong>Date: 17/ 04/ 2021</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!----Hymn for incand--->
+                        <div class="event-d1 event--eleven" id="detail-off11">
+                            <div class="page-c">
+                                <div class="img-c">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="text-c">
+                                    <p>
+                                        It is indeed surprising to think how music has the potential to evoke laughter, fear and our highest
+                                         aspirations and lift our inspiration into a realm of possibilities. <br>
+
+                                        Keeping behind the melancholic memories of the past year , let's make music a part of our journey of 
+                                        resilience and elevate the track of entropy with soulful renditions.<br>
+
+                                        Incandescence'21 presents <b>"Hymn For The Incand"</b>, an online singing competition for everyone out there. 
+                                        So, it's the perfect opportunity to try your hands at music and showcase an entirely new version of yourself. <br>
+
+                                        Break the shackles that hold you and unleash the musical prowess that's inside you. Record your songs
+                                         and mesmerize everyone with your melodies!
+                                    </p>
+                                    <div  class="date"><strong>Date: 17/ 04/ 2021</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!----Natraaz--->
+                        <div class="event-d1 event--twelve" id="detail-off12">
+                            <div class="page-c">
+                                <div class="img-c">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="text-c">
+                                    <p>
+                                       <i>"Nobody cares if you can't dance well. Just get up and dance. Great dancers are great because of their passion."</i>
+                                        &emsp; &emsp;~Martha Graham<br><br>
+
+                                        Someone rightly said that dance is not merely body movement, it is like poetry in motion. With various thoughts,
+                                         emotions, expressions and elegant movements, it brings alive in the meaning.<br><br>
+                                        In spite of having a strong urge to dance, many of us feel so shy that we restrict ourselves to small rooms.
+                                         But with <b>Natraaz</b>, the dance module of Incandescence, there will be ample opportunity to explore ones interest
+                                          in dancing. With more than 100 participants from all across the Northeast in last edition, it was just legit!<br><br>
+                                        So don't miss the thrill and excitement and show your passion through your steps.
+                                    </p>
+                                    <div  class="date"><strong>Date: 17/ 04/ 2021</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!----Director's Cut--->
+                        <div class="event-d1 event--thirteen" id="detail-off13">
+                            <div class="page-c">
+                                <div class="img-c">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="text-c">
+                                    <p>
+                                        <b>The Director's Cut</b> is the Annual short film festival event under Advay - the Dramatics club of NIT Silchar, which receives entries 
+                                        from all across the country.<br><br>
+                                        "The Director's Cut" allows aspiring filmmakers to let their imagination fly as the perfect stage. <br>
+                                        Over the years, the event has been largely successful with over 50 entries every year. The films are screened 
+                                        over a series of days in the auditorium of NIT Silchar as enthusiasts gather to appreciate the cinematography. 
+                                        <br><br>
+                                        With prizes worth the efforts of the budding filmmakers, "The Director's Cut" makes sure it helps them to give 
+                                        their best and motivate them towards cultivating and honing theirs skills in the field.
+                                    
+                                    </p>
+                                    <div  class="date"><strong>Date: 17/ 04/ 2021</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!----Frames--->
+                        <div class="event-d1 event--fourteen" id="detail-off14">
+                            <div class="page-c">
+                                <div class="img-c">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="text-c">
+                                    <p>
+                                       <i>A thing that you see in my pictures is that I was not afraid to fall in love with these people.</i><br>
+                                        ~Annie Leibovitz<br><br>
+                                        The Photography Module of Incandescense, is the most anticipated events for all shutterbugs 
+                                        across the campus. With the art of expressing and bringing the moments alive, let your photos
+                                         reflect the feeling of love, cause it is the photos which remembers every little things, long
+                                          after you have forgotten everything. 
+                                          <br>It's time to gear up for the flagship event of Obiettivo, <b>FRAMES</b>.
+                                           With nature rejuvinating and healing itself, FRAMES is inviting all photographers pan India, bring out
+                                            your art and make the imagination you want to create with the reality.<br><br>
+                                        Keep clicking! 
+                                    </p>
+                                    <div  class="date"><strong>Date: 17/ 04/ 2021</strong></div>
                                 </div>
                             </div>
                         </div>
@@ -401,7 +549,9 @@
             </div>
         </div>
     </body>
-    <script src="./js/event/event.js"></script>
+    
+    <script type="text/javascript" src="./js/event/event.js"></script>
+   
     <script>
         setTimeout(() => {
             document.querySelector('.preloader').style.zIndex= "-1";

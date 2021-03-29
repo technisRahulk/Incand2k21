@@ -128,7 +128,17 @@ body{
     display: flex;
     height: 90%;
 }
+.liner{
+    /* width:530px; */
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.innerLiner{
+    transition: all .5s linear;
+}
 /* ------Offline events timeline begins----- */
+
 .date p {
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -145,15 +155,25 @@ body{
     top: 285px;
     left: 85px;
 }
+
 #offline_event{
-    width:50%;
-    display: block;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    display: inline-block;
+    transition: all 1.5s ease-in;
+
 }
 #online_event{
-    display: none;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    display: inline-block;
+    transition: all 1.5s ease-in;
+    overflow-y:hidden;
+
 }
 .timeline{
-    /* width: 0%; */
     content: '';
     overflow-y: hidden;
     margin-top: 12%;
@@ -169,7 +189,7 @@ body{
 }
 .event-name{
     background-color: white;
-    width: 40%;
+    width: 44%;
     border-radius: 7px;
     padding: 10px;
     height: 20%;
@@ -215,21 +235,20 @@ hr{
     transition: 2s ease-in;
 }
 #day2{
-    margin-top: 5%;
+    /* margin-top: 5%; */
     display: none;
-    transition: 2s ease-in;
-
 }
 .pointer{
-    height:20px;
-    width: 20px;
+    height:25px;
+    width: 25px;
+    background-image: url('./../../image/Events/pointer.svg') ;
     cursor: pointer;
-    margin: 1% 55%;
-    
+    position: absolute;
+    bottom: -22%;
+    left:30%;
 }
-svg{
-    width: 21px;
-    height: 21px
+#day2 .pointer{
+    /* bottom: -15%; */
 }
 
 .pointer:hover{
@@ -238,10 +257,10 @@ svg{
 }
 @keyframes pointer{
     0%,100%{
-        margin-top: 0;
+        bottom: -22%;
     }
     50%{
-        margin-top: 1%;
+        bottom: -24%;
     }
 }
 #day2 .pointer{
@@ -251,9 +270,7 @@ svg{
 .grow:hover{
     transform: scale(1.2);
 }
-/* .grow:hover p:nth-child(1){
-    font-size: 30px;
-} */
+
 /* ------Offline events timeline ends----- */
 
 /* <-----toggle button----> */
@@ -268,7 +285,7 @@ svg{
     margin-left: 0vw;
 }
         
-.toggle:after {
+.toggle-cover{
     content: '';
     position: absolute;
     width: 77px;
@@ -277,28 +294,10 @@ svg{
     background-color: black;
     top: -2px; 
     left: -2px;
-    transition:  all 0.5s;
+    transition:  all 0.5s linear;
+    z-index:3;
 }
-        
-span{
-    font-weight: bold;
-    font-size: 15px;
-    color: black;
-    position: absolute;
-    top: 22%;
-    padding: auto;
-}
-span:nth-child(1){
-    right: 59%;
-}
-span:nth-child(2){
-    right: 5%;
-}
-
-.checkbox:checked + .toggle::after {
-    left : 71px; 
-}
-        
+      
 .checkbox:checked + .toggle {
     background-color: white;
 }
@@ -306,6 +305,24 @@ span:nth-child(2){
 .checkbox { 
     display : none;
 }
+.slide{
+    border: none;
+    background: none;
+    outline: none;
+    position: absolute;
+    margin-top: 12px;
+    z-index:2;
+}
+.slide-right{
+    left:13px;
+}
+.slide-left{
+    right: 15px;
+}
+.moveLeft{
+    transform: translateX(-100%);
+}
+
 /* <-----toggle button----> */
 
 /* ---------------colour added to individual elements----------------- */
@@ -407,7 +424,7 @@ span:nth-child(2){
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -11.5%);
+    transform: translate(-50%, -18.5%);
     width: 68%;
     height: 30%;
     z-index: 1;
@@ -415,51 +432,63 @@ span:nth-child(2){
 }
 .event-detail .text-c .date{
     position: absolute;
-    bottom: 1%;
+    bottom: -55%;
 }
 .event-detail .text-c p {
+    /* border: 1px solid red; */
     font-family: bradEvent;
     font-weight: 800;
     line-height: 23px;
-    height: 70%;
+    height: 300px;
+    overflow-y: scroll;
     z-index: 2;
+    scrollbar-width: none;
 }
-
+.event-detail .text-c p::-webkit-scrollbar{
+    display:none;
+}
 .event--one .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 .event--two .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 .event--three .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 .event--four .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
+
 .event--five .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 .event--six .text-c {
-    transform: translate(-50%, -16.5%);
     display: none;
 }
 .event--seven .text-c {
-    transform: translate(-50%, -6.5%);
-    /* display: none; */
+    display: none;
 }
 .event--eight .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
 }
 .event--nine .text-c {
-    transform: translate(-50%, -11.5%);
     display: none;
+}
+.event--ten .text-c {
+    display: none;
+}
+.event--eleven .text-c {
+    display: none;
+}
+.event--twelve .text-c {
+    display: none;
+}
+.event--thirteen .text-c {
+    display: none;
+}
+.event--fourteen .text-c {
+    /* display: none; */
 }
 
 /* -------------- event description ends------- */
