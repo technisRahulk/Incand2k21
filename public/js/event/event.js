@@ -54,12 +54,11 @@ function eventMediumDecision (eventMedium) {
     if (eventMedium === 0) {
         document.querySelector(`#detailsoff--${currentOff}`).classList.remove('hidden');
         document.querySelector(`#detailson--${currentOn}`).classList.add('hidden');
-        detailsOffline[currentOff].style.transform = 'scale(1.22)';
+        detailsOffline[currentOff].style.transform = 'scale(1.2)';
     } else if (eventMedium === 1) {
         document.querySelector(`#detailson--${currentOn}`).classList.remove('hidden');
         document.querySelector(`#detailsoff--${currentOff}`).classList.add('hidden');
-        detailsOnline[currentOn].style.transform = 'scale(1.22)';
-    
+        detailsOnline[currentOn].style.transform = 'scale(1.2)';    
     }
 }
 eventMediumDecision(0);
@@ -76,7 +75,7 @@ for(let clk =0; clk < detailsOffline.length; clk++) {
       }
 
       document.querySelector(`#detailsoff--${clk}`).classList.remove('hidden');
-      detailsOffline[clk].style.transform = 'scale(1.22)';
+      detailsOffline[clk].style.transform = 'scale(1.2)';
     });
 };
 
@@ -88,7 +87,7 @@ for(let i=0; i< detailsOffline.length; i++) {
         else {
             document.querySelector(`#detailsoff--${currentOff}`).classList.add('hidden');
             document.querySelector(`#detailsoff--${i}`).classList.remove('hidden');
-            detailsOffline[i].style.transform = 'scale(1.18)';
+            detailsOffline[i].style.transform = 'scale(1.1)';
         }
 });
 }
@@ -117,7 +116,7 @@ for(let clk =0; clk < detailsOnline.length; clk++) {
       }
 
       document.querySelector(`#detailson--${clk}`).classList.remove('hidden');
-      detailsOnline[clk].style.transform = 'scale(1.22)';
+      detailsOnline[clk].style.transform = 'scale(1.2)';
     });
 };
 
@@ -130,7 +129,7 @@ for(let i=0; i< detailsOnline.length; i++) {
         else {
             document.querySelector(`#detailson--${currentOn}`).classList.add('hidden');
             document.querySelector(`#detailson--${i}`).classList.remove('hidden');
-            detailsOnline[i].style.transform = 'scale(1.18)';
+            detailsOnline[i].style.transform = 'scale(1.1)';
         }
 });
 }

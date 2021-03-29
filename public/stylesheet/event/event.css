@@ -88,7 +88,7 @@ body{
     height: 100vh;
 }
 .pre-1 {
-    /* animation: goTopRight 2s ease-in;  */
+    animation: goTopRight 2s ease-in; 
     top: -37%;
     left: 37.5%;
     transform: scale(.4);
@@ -97,7 +97,7 @@ body{
 }
 
 .pre-2 {
-    /* animation: goBottomLeft 2s ease-in; */
+    animation: goBottomLeft 2s ease-in;
     top: 32%;
     left: -42%;
     transform: scale(.4);
@@ -418,8 +418,12 @@ hr{
 }
 
 .event-detail .img-c img {
-    height: 80%;
-    width: 80%;
+    position: absolute;
+    left: 15%;
+    top: 13%;
+    height: 70%;
+    width: 70%;
+    transform: rotateZ(7.57deg);
 }
 
 .event-detail .text-c {
