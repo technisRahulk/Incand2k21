@@ -23,27 +23,27 @@ scene.on("update", (e) => {
 });
 
 //Text Animation
-const textAnimi20 = TweenMax.fromTo(
-  i20,
-  5,
-  { transform: "translateY(200px)" },
-  { transform: "translateY(0px)" },
-  { ease: "Strong.easeInOut" }
-);
-const textAnimi202 = TweenMax.fromTo(
-  i202,
-  5,
-  { transform: "translateY(200px)" },
-  { transform: "translateY(0px)" },
-  { ease: "Strong.easeInOut" }
-);
-const logoAnimi20 = TweenMax.fromTo(
-  i20_logo,
-  5,
-  { transform: "translateY(200px)", opacity: 0 },
-  { transform: "translateY(0px)", opacity: 1 },
-  { ease: "Strong.easeInOut" }
-);
+// const textAnimi20 = TweenMax.fromTo(
+//   i20,
+//   5,
+//   { transform: "translateY(200px)" },
+//   { transform: "translateY(0px)" },
+//   { ease: "Strong.easeInOut" }
+// );
+// const textAnimi202 = TweenMax.fromTo(
+//   i202,
+//   5,
+//   { transform: "translateY(200px)" },
+//   { transform: "translateY(0px)" },
+//   { ease: "Strong.easeInOut" }
+// );
+// const logoAnimi20 = TweenMax.fromTo(
+//   i20_logo,
+//   5,
+//   { transform: "translateY(200px)", opacity: 0 },
+//   { transform: "translateY(0px)", opacity: 1 },
+//   { ease: "Strong.easeInOut" }
+// );
 // const navbar_anim = TweenMax.fromTo(
 //   navbar,
 //   5,
@@ -52,32 +52,32 @@ const logoAnimi20 = TweenMax.fromTo(
 //   { ease: "Strong.easeInOut" }
 // );
 // ___________________________________________________
-let title_incand = new ScrollMagic.Scene({
-  duration: 1000,
-  triggerElement: intro,
-  triggerHook: 0,
-  offset: 6000,
-})
-  .setTween(textAnimi20)
-  .addTo(controller);
+// let title_incand = new ScrollMagic.Scene({
+//   duration: 1000,
+//   triggerElement: intro,
+//   triggerHook: 0,
+//   offset: 6000,
+// })
+//   .setTween(textAnimi20)
+//   .addTo(controller);
 
-let subtitle_march2020 = new ScrollMagic.Scene({
-  duration: 1000,
-  triggerElement: intro,
-  triggerHook: 0,
-  offset: 6000,
-})
-  .setTween(textAnimi202)
-  .addTo(controller);
+// let subtitle_march2020 = new ScrollMagic.Scene({
+//   duration: 1000,
+//   triggerElement: intro,
+//   triggerHook: 0,
+//   offset: 6000,
+// })
+//   .setTween(textAnimi202)
+//   .addTo(controller);
 
-let logo_incand = new ScrollMagic.Scene({
-  duration: 1000,
-  triggerElement: intro,
-  triggerHook: 0,
-  offset: 6000,
-})
-  .setTween(logoAnimi20)
-  .addTo(controller);
+// let logo_incand = new ScrollMagic.Scene({
+//   duration: 1000,
+//   triggerElement: intro,
+//   triggerHook: 0,
+//   offset: 6000,
+// })
+//   .setTween(logoAnimi20)
+//   .addTo(controller);
 
 // let navbar_sc = new ScrollMagic.Scene({
 //   duration: 1000,
