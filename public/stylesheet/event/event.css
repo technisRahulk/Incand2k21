@@ -88,7 +88,7 @@ body{
     height: 100vh;
 }
 .pre-1 {
-    /* animation: goTopRight 2s ease-in;  */
+    animation: goTopRight 2s ease-in; 
     top: -37%;
     left: 37.5%;
     transform: scale(.4);
@@ -97,7 +97,7 @@ body{
 }
 
 .pre-2 {
-    /* animation: goBottomLeft 2s ease-in; */
+    animation: goBottomLeft 2s ease-in;
     top: 32%;
     left: -42%;
     transform: scale(.4);
@@ -194,7 +194,7 @@ body{
     padding: 10px;
     height: 20%;
     margin-left: 7%;
-    transition: all .4s;
+    transition: all 0.4s;
 }
 .event-name p:nth-child(1){
     color: rgb(241, 35, 35);
@@ -247,9 +247,9 @@ hr{
     bottom: -22%;
     left:30%;
 }
-#day2 .pointer{
-    /* bottom: -15%; */
-}
+/* #day2 .pointer{
+    bottom: -15%;
+} */
 
 .pointer:hover{
     animation: pointer 1s linear infinite;
@@ -267,7 +267,7 @@ hr{
     transform: rotateX(180deg);
 }
 
-.grow:hover{
+.grow:hover{ 
     transform: scale(1.2);
 }
 
@@ -315,9 +315,11 @@ hr{
 }
 .slide-right{
     left:13px;
+    cursor: pointer;
 }
 .slide-left{
     right: 15px;
+    cursor: pointer;
 }
 .moveLeft{
     transform: translateX(-100%);
@@ -416,8 +418,12 @@ hr{
 }
 
 .event-detail .img-c img {
-    height: 10%;
-    width: 10%;
+    position: absolute;
+    left: 15%;
+    top: 13%;
+    height: 70%;
+    width: 70%;
+    transform: rotateZ(7.57deg);
 }
 
 .event-detail .text-c {
@@ -447,48 +453,6 @@ hr{
 .event-detail .text-c p::-webkit-scrollbar{
     display:none;
 }
-.event--one .text-c {
-    display: none;
-}
-.event--two .text-c {
-    display: none;
-}
-.event--three .text-c {
-    display: none;
-}
-.event--four .text-c {
-    display: none;
-}
 
-.event--five .text-c {
-    display: none;
-}
-.event--six .text-c {
-    display: none;
-}
-.event--seven .text-c {
-    display: none;
-}
-.event--eight .text-c {
-    display: none;
-}
-.event--nine .text-c {
-    display: none;
-}
-.event--ten .text-c {
-    display: none;
-}
-.event--eleven .text-c {
-    display: none;
-}
-.event--twelve .text-c {
-    display: none;
-}
-.event--thirteen .text-c {
-    display: none;
-}
-.event--fourteen .text-c {
-    /* display: none; */
-}
 
 /* -------------- event description ends------- */
