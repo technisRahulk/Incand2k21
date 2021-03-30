@@ -1,5 +1,6 @@
 const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
+const section = document.querySelector(".sectionCarousel");
 
 const i20 = document.querySelector(".i20");
 const i202 = document.querySelector(".i20_2");
@@ -97,3 +98,11 @@ setInterval(() => {
 
   video.currentTime = delay;
 }, 33.3);
+
+let sectionScene = new ScrollMagic.Scene({
+  duration: 500,
+  triggerElement: section,
+  triggerHook: 0,
+})
+  .setPin(section)
+  .addTo(controller);
