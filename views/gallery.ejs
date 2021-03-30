@@ -17,10 +17,25 @@
       integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
       crossorigin="anonymous"
     ></script>
-
+    <link rel="stylesheet" href="./stylesheet/event/event.css" />
     <link rel="stylesheet" href="./stylesheet/gallery/gallery.css" />
   </head>
   <body>
+    <!-- post loader -->
+    <div class="preloader--1">
+      <img
+        src="./image/Events/noShadow-upper-half.svg"
+        alt="Post Loader"
+        class="pre-img pre-1"
+      />
+    </div>
+    <div class="preloader--2">
+      <img
+        src="/image/Events/noShadow-lower-half.svg"
+        alt="Post Loader"
+        class="pre-img pre-2"
+      />
+    </div>
     <div class="buttons">
       <ul>
         <li onclick="showPanel(0)">Gliteratti</li>
@@ -453,10 +468,10 @@
 
       function showPanel(panelIndex) {
         tabButtons.forEach(function (node) {
-          node.style.fontSize = "1.25rem";
+          node.style.fontSize = "clamp(1rem, 1.5vw, 2rem)";
           node.style.color = "white";
         });
-        tabButtons[panelIndex].style.fontSize = "2rem";
+        tabButtons[panelIndex].style.fontSize = "clamp(1.5rem, 2vw, 4rem)";
         tabButtons[panelIndex].style.color = "#fe304f";
 
         tabPanels.forEach(function (node) {
@@ -466,5 +481,7 @@
       }
       showPanel(0);
     </script>
+
+    <script type="text/javascript" src="./js/event/event.js"></script>
   </body>
 </html>
