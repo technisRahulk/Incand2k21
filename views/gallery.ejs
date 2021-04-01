@@ -1,260 +1,487 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <!-- add icon link -->
-    <link rel="icon" href="/image/i.png" type="image/png">
-    <meta name="Incandescence Gallery Page" content="Images from various events of past Incandescence | NIT Silchar">
-    <meta name="robots" content="index, follow" />
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="stylesheet/loader/loader.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet/menu/menu.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet/gallery/gallerymenu.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet/gallery/gallerystyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel='stylesheet' type="text/css" href='stylesheet/footer/footer.css'>
-
-</head>
-
-<body>
-
-    <div id='loader'>
-        <div id='mascot-baton'>
-            <div id='flame' class="fire_place">
-                <div class="blur_fire">
-                    <div class="big_flame"></div>
-                </div>
-                <div class="spark spark1">i</div>
-                <div class="spark spark2">n</div>
-                <div class="spark spark3">c</div>
-                <div class="spark spark4">a</div>
-                <div class="spark spark5">n</div>
-                <div class="spark spark6">d</div>
-                <div class="spark spark7">e</div>
-                <div class="spark spark8">s</div>
-                <div class="spark spark9">c</div>
-                <div class="spark spark10">e</div>
-                <div class="spark spark11">n</div>
-                <div class="spark spark12">c</div>
-                <div class="spark spark13">e</div>
-            </div>
-            <img src="image/loader/airawat-holding-torch.png" id="baton">
-        </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Comaptible" content="ie=edge" />
+    <link rel="icon" href="/image/i.png" type="image/png" />
+    <meta
+      name="Incandescence Gallery Page"
+      content="Gallery in Incandescence 2020 | NIT Silchar"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./stylesheet/event/event.css" />
+    <link rel="stylesheet" href="./stylesheet/gallery/gallery.css" />
+  </head>
+  <body>
+    <!-- post loader -->
+    <div class="preloader--1">
+      <img
+        src="./image/Events/noShadow-upper-half.svg"
+        alt="Post Loader"
+        class="pre-img pre-1"
+      />
     </div>
-
-    <div class="heading">
-        <h1>
-            <span>
-  <span>G</span>
-            <span>a</span>
-            <span>l</span>
-            <span>l</span>
-            <span>e</span>
-            <span>r</span>
-            <span>y</span>
-            </span>
-        </h1>
+    <div class="preloader--2">
+      <img
+        src="/image/Events/noShadow-lower-half.svg"
+        alt="Post Loader"
+        class="pre-img pre-2"
+      />
     </div>
-
-    <div class="upperpart">
-        <img src="image/gallery/Frame3.svg" class="frame">
-        <div id="carousel-example-generic" data-interval="2000" class="carousel slide fadein " data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators"></ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner"></div>
-            <!-- Controls -->
-            <a class="carousel-control-prev" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+    <div class="buttons">
+      <ul>
+        <li onclick="showPanel(0)">Gliteratti</li>
+        <li onclick="showPanel(1)">CarpeDiem</li>
+        <li onclick="showPanel(2)">Nirvana</li>
+        <li onclick="showPanel(3)">Thundermarch</li>
+      </ul>
     </div>
-
-    <div id="right" style="text-align:center">
-        <span class="dot"></span>
-        <i class="rightarr"></i><i class="rightarr"></i>
+    <!--Gliteratti-->
+    <div class="tabPanel">
+      <div class="gallery">
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (5).jpg"
+            data-original="g (5).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (2).jpg"
+            data-original="g (2).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (6).jpg"
+            data-original="g (6).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (7).jpg"
+            data-original="g (7).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (1).jpg"
+            data-original="g (1).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (3).jpg"
+            data-original="g (3).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (10).jpg"
+            data-original="g (10).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (8).jpg"
+            data-original="g (8).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (9).jpg"
+            data-original="g (9).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (4).jpg"
+            data-original="g (4).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (11).jpg"
+            data-original="g (11).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (12).jpg"
+            data-original="g (12).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/gliteratti/g (13).jpg"
+            data-original="g (13).jpg"
+            alt="Images"
+          />
+        </div>
+      </div>
     </div>
-
-    <div id="left" style="text-align:center">
-        <span class="dot"></span>
-        <i class="leftarr"></i><i class="leftarr"></i>
+    <!--Carpedium-->
+    <div class="tabPanel">
+      <div class="gallery">
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (5).jpg"
+            data-original="c (5).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (2).jpg"
+            data-original="c (2).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (6).jpg"
+            data-original="c (6).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (3).jpg"
+            data-original="c (3).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (8).jpg"
+            data-original="c (8).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (7).jpg"
+            data-original="c (7).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (10).jpg"
+            data-original="c (10).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (9).jpg"
+            data-original="c (9).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (1).jpg"
+            data-original="c (1).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (4).jpg"
+            data-original="c (4).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (11).jpg"
+            data-original="c (11).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (12).jpg"
+            data-original="c (12).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/carperdium/c (13).jpg"
+            data-original="c (13).jpg"
+            alt="Images"
+          />
+        </div>
+      </div>
     </div>
-
-    <div class="cover">
-        <div class="example opa">
-            <div class="clip">
-
-                <div class="film eve" id="Carpediem"><img src="image/Carpediem.jpg">
-                    <span class="popuptext" id="popupCarpediem">Carpediem</span>
-                </div>
-
-            </div>
-            <div class="clip">
-
-                <div class="film eve" id="Deprador"><img src="image/Deprador.jpg">
-                    <span class="popuptext" id="popupDeprador">Deprador</span>
-                </div>
-
-            </div>
-            <div class="clip">
-                <div class="film eve" id="Glitterati"><img src="image/Glitterati.jpg">
-                    <span class="popuptext" id="popupGlitterati">Glitterati</span>
-                </div>
-            </div>
+    <!--Nirvana-->
+    <div class="tabPanel">
+      <div class="gallery">
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (5).jpg"
+            data-original="n (5).jpg"
+            alt="Images"
+          />
         </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (6).jpg"
+            data-original="n (6).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (13).jpg"
+            data-original="n (13).png"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (7).jpg"
+            data-original="n (7).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (11).jpg"
+            data-original="n (11).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (3).jpg"
+            data-original="n (3).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (10).jpg"
+            data-original="n (10).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (8).jpg"
+            data-original="n (8).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (9).jpg"
+            data-original="n (9).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (4).jpg"
+            data-original="n (4).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (1).jpg"
+            data-original="n (1).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (12).jpg"
+            data-original="n (12).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/nirvana/n (2).jpg"
+            data-original="n (2).jpg"
+            alt="Images"
+          />
+        </div>
+      </div>
     </div>
-
-    <!-- menu -->
-    <div id="menu">
-
-        <a href='/'>
-            <div id='logo'>
-            </div>
-        </a>
-
-        <div id="cld1c">
-            <div id="cld1">
-                <p>Menu</p>
-            </div>
+    <!--Thundermarch-->
+    <div class="tabPanel">
+      <div class="gallery">
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (5).jpg"
+            data-original="t (5).jpg"
+            alt="Images"
+          />
         </div>
-
-        <div id="cld2c">
-            <div id="cld2">
-            </div>
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (2).jpg"
+            data-original="t (2).jpg"
+            alt="Images"
+          />
         </div>
-
-        <div id="cld3c">
-            <div id="cld3">
-            </div>
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (6).jpg"
+            data-original="t (6).jpg"
+            alt="Images"
+          />
         </div>
-
-        <div id="cld4c">
-            <div id="cld4">
-                <a href="/event" id="link1">Events</a>
-            </div>
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (7).jpg"
+            data-original="t (7).jpg"
+            alt="Images"
+          />
         </div>
-
-        <div id="cld5c">
-            <div id="cld5">
-                <a href="/gallery" id="link2">Gallery</a>
-            </div>
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (1).jpg"
+            data-original="t (1).jpg"
+            alt="Images"
+          />
         </div>
-
-        <div id="cld6c">
-            <div id="cld6">
-                <a href="/brochure" id="link3">Brochure</a>
-            </div>
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (3).jpg"
+            data-original="t (3).jpg"
+            alt="Images"
+          />
         </div>
-
-        <div id="cld7c">
-            <div id="cld7">
-                <a href="/register" id="link4">Tickets</a>
-            </div>
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (10).jpg"
+            data-original="t (10).jpg"
+            alt="Images"
+          />
         </div>
-
-        <div id="cld8c">
-            <div id="cld8">
-                <a href="/munhome" id="link5">NITS MUN</a>
-            </div>
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (8).jpg"
+            data-original="t (8).jpg"
+            alt="Images"
+          />
         </div>
-
-        <div id="cld9c">
-            <div id="cld9">
-                <a href="http://www.razzmatazznits.com" id="link6">Razzmatazz</a>
-            </div>
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (9).jpg"
+            data-original="t (9).jpg"
+            alt="Images"
+          />
         </div>
-
-
-        <div id="cld10c">
-            <div id="cld10">
-                <a href="/indieunplugged" id="link6">Indie</a>
-            </div>
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (4).jpg"
+            data-original="t (4).jpg"
+            alt="Images"
+          />
         </div>
-
-
-        <div id="cld11c">
-            <div id="cld11">
-                <a href="/thundermarch" id="link6">Thundermarch</a>
-            </div>
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (11).jpg"
+            data-original="t (11).jpg"
+            alt="Images"
+          />
         </div>
-
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (12).jpg"
+            data-original="t (12).jpg"
+            alt="Images"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./image/gallery/thundermarch/t (13).jpg"
+            data-original="t (13).jpg"
+            alt="Images"
+          />
+        </div>
+      </div>
     </div>
-
-
-    <footer class="footer-distributed">
-
-        <div class="footer-left">
-            <a href='/'><img src='/image/menu/logo.png' style="width: 100%;"></a>
-        </div>
-
-        <div class="footer-center">
-            <h3>Quick Links</h3>
-            <ul style="list-style:none;" class="footer-links">
-                <li><a href="/faq">FAQ</a></li>
-                <li><a href="/team">Contact</a></li>
-                <li><a href="/reachus">Reach Us</a></li>
-                <li><a href="/sponsors">Sponsors</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-right">
-            <div class="footer-links">
-                <a href="/campus">
-                    <h3>Campus Ambassador</i>
-                    </h3>
-                </a>
-            </div>
-            <div class="footer-icons">
-                <a href="https://www.facebook.com/incandescence.nits"><i class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/incandnits?lang=en"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.youtube.com/channel/UCb_0C06vYP674tyu50o7-Fg"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/incandescence.nits/"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:incandescencenitsilchar@gmail.com"><i class="fa fa-envelope"></i></a>
-            </div>
-        </div>
-
-    </footer>
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/gallery/galleryfunct.js"></script>
-    <script src="js/menu/menu.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(window).resize(function(e) {
-                adaptMenu();
-            });
-            adaptMenu();
-            document.getElementById('loader').remove();
-        });
-    </script>
-
+    <!--Modal-->
+    <div class="modal">
+      <img
+        src="./image/gallery/gliteratti_org/g4 2.jpg"
+        alt=""
+        class="full-img"
+      />
+      <p class="caption"></p>
+    </div>
     <script>
-        var $window = $(window);
-
-        $(document).ready(function() {
-            var y = window.matchMedia("(min-width: 1000px)");
-            start(y);
-            y.addListener(start);
+      const modal = document.querySelector(".modal");
+      const previews = document.querySelectorAll(".gallery img");
+      const original = document.querySelector(".full-img");
+      const caption = document.querySelector(".caption");
+      const gallery = document.querySelector(".gallery");
+      previews.forEach((preview) => {
+        preview.addEventListener("click", () => {
+          modal.classList.add("open");
+          original.classList.add("open");
+          const originalSrc = preview.getAttribute("data-original");
+          original.src = `./image/gallery/org/${originalSrc}`;
+          const altTxt = preview.alt;
+          caption.textContent = altTxt;
+          document.body.style.overflow = "hidden";
         });
+      });
+      modal.addEventListener("click", (e) => {
+        if (e.target.classList.contains("modal")) {
+          modal.classList.remove("open");
+          original.classList.remove("open");
+          document.body.style.overflow = "auto";
+        }
+      });
+
+      //Buttons to change gallery size
+      var tabButtons = document.querySelectorAll(" .buttons ul li");
+      var tabPanels = document.querySelectorAll("  .tabPanel");
+
+      function showPanel(panelIndex) {
+        tabButtons.forEach(function (node) {
+          node.style.fontSize = "clamp(1rem, 1.5vw, 2rem)";
+          node.style.color = "white";
+        });
+        tabButtons[panelIndex].style.fontSize = "clamp(1.5rem, 2vw, 4rem)";
+        tabButtons[panelIndex].style.color = "#fe304f";
+
+        tabPanels.forEach(function (node) {
+          node.style.display = "none";
+        });
+        tabPanels[panelIndex].style.display = "block";
+      }
+      showPanel(0);
     </script>
 
-
-</body>
-
+    <script type="text/javascript" src="./js/event/event.js"></script>
+  </body>
 </html>
