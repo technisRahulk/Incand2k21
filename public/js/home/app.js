@@ -11,7 +11,7 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 8000,
+  duration: 4500,
   triggerElement: intro,
   triggerHook: 0,
 })
@@ -19,7 +19,7 @@ let scene = new ScrollMagic.Scene({
   .addTo(controller);
 
 scene.on("update", (e) => {
-  scrollpos = e.scrollPos / 500;
+  scrollpos = e.scrollPos / 450;
 });
 
 //Text Animation
