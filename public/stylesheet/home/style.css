@@ -20,8 +20,8 @@ video {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: brightness(40%);
-          filter: brightness(40%);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
   z-index: 0;
 }
 
@@ -117,6 +117,7 @@ video {
   width: 80vw;
   height: 6rem;
 }
+
 
 .carousel-item img{
   filter: brightness(69%);
