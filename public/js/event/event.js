@@ -24,6 +24,12 @@ slideLeft.addEventListener('click', () => {
     document.querySelector('.innerLiner').classList.add('moveLeft');
     document.querySelector('.toggle-cover').style.left= '50%';
     eventMediumDecision(1);
+      if (x.matches) {
+        mobileBtnList.forEach((el) => {
+          el.style.transform = 'scale(1)';
+          console.log(el);
+        });
+      }
 });
 
 // THIS ENABLES OFFLINE => eventMedium = 0
@@ -31,6 +37,12 @@ slideRight.addEventListener('click', () => {
     document.querySelector('.innerLiner').classList.remove('moveLeft');
     document.querySelector('.toggle-cover').style.left= '-2px';
     eventMediumDecision(0);
+      if (x.matches) {
+        mobileBtnList.forEach((el) => {
+          el.style.transform = 'scale(1)';
+          console.log(el);
+        });
+      }
 });
 
 // DETAILS OF EVENTS
@@ -145,3 +157,37 @@ for (let i = 0; i < detailsOnline.length; i++) {
     }
   });
 }
+
+// mobile view
+
+const x = window.matchMedia('(max-width: 700px)');
+
+  const closeMobile = document.querySelector('.mobile-description');
+  const mobilePopup = document.querySelector('.mobile-popup');
+  const overlay = document.querySelector('.mobile-overlay');
+  const mobileBtnList = document.querySelectorAll('.mobile-btn')
+
+  if(x.matches) {
+    mobileBtnList.forEach(el => {
+      el.style.transform = 'scale(1)';
+      console.log(el);
+    });
+  }
+
+   function hidePopup () {
+     mobilePopup.classList.add('hidden');
+   };
+
+  closeMobile.addEventListener('click', hidePopup);
+  overlay.addEventListener('click', hidePopup);
+
+  for( let i=0;i< mobileBtnList.length; i++) {
+    mobileBtnList[i].addEventListener('click', () => {
+      document.getElementById('mobile--image').src = document.getElementById(`m-img-${i}`).src;
+      document.getElementById('mobile--text').innerHTML = document.getElementById(`m-text-${i}`).innerHTML;
+      document.getElementById('mobile--date').textContent = document.getElementById(`m-date-${i}`).textContent;
+      mobilePopup.classList.remove('hidden');
+    });
+  }
+
+  hidePopup();
