@@ -189,7 +189,7 @@
         </ul>
         <div class="menu-background"></div>
       </div> -->
-      <video src="image/home/homebg_2.mp4"></video>
+      <video id="loadervideo" preload="metadata" src="https://firebasestorage.googleapis.com/v0/b/incandweb.appspot.com/o/homebg_2.mp4?alt=media&token=d9a676c3-887d-4f3b-b3fc-76aa186b587e"></video>
       
     </div>
 
@@ -230,6 +230,29 @@
     </div>
     
   </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB_kqIbZ4yiJzwvLntlvtetrfzvs5m3-LM",
+    authDomain: "incandweb.firebaseapp.com",
+    projectId: "incandweb",
+    storageBucket: "incandweb.appspot.com",
+    messagingSenderId: "1096803196919",
+    appId: "1:1096803196919:web:24dbf050ca5df6e38258f2",
+    measurementId: "G-N6ZR23PLQ7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <script src="js/home/app.js"></script>
   <script src="js/navbar/nav.js"></script>
 </html>
