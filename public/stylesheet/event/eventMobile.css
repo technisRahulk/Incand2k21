@@ -263,16 +263,6 @@ hr{
 /* -------------- event description ends------- */
 
 /* mobile-event-description */
-@keyframes popupScale{
-    0% {
-        transform: scale(0);
-        display: none;
-    }
-    100% {
-        transform: scale(1);
-        display: block;
-    }
-}
 
 .mobile-popup {
     display: block;
